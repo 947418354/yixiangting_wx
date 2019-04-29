@@ -1,0 +1,9 @@
+.form-address-item{
+  display:flex;
+}
+.form-address-item-view1{
+  width:30%;
+}
+.form-address-item-view2{
+  width:70%;
+}

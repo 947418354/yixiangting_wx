@@ -1,0 +1,26 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+  background-color: #888;
+} 
+view{
+  background-color: #fff;
+}
+page{
+  background-color: #eee;
+  height:100%;
+}
+/*底部通用大按钮,红色  */
+.large-button-bottom-f00{
+  width:100%;
+  position: absolute;
+  bottom: 0;
+  background-color:#f00;
+  color:whitesmoke;
+}

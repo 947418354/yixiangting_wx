@@ -1,0 +1,28 @@
+<view class="tab">
+	 <view class="tab-nav">
+	  <view class="tab-nav-item {{tabi==0?'active':''}}" catchtap='tabnav' data-tabi="0">全部</view>
+	  <view class="tab-nav-item {{tabi==1?'active':''}}" catchtap='tabnav' data-tabi="1">待使用</view>
+    <view class="tab-nav-item {{tabi==2?'active':''}}" catchtap='tabnav' data-tabi="2">已使用</view>
+	 </view>
+	 <view class="tab-content {{tabi==0?'active':''}}">
+    <view wx:if="{{list.length>0}}">{{list.length}}[][]</view>
+    <view wx:else class="tab-content-vac">
+      <image src="{{baseUrl}}img/img-icons/vac.png" mode="widthFix"></image>
+      <text>订单空空如也</text>
+    </view>
+	 </view>
+	 <view class="tab-content {{tabi==1?'active':''}}">
+    <view wx:if="{{list.length>0}}">{{list.length}}[][]</view>
+    <view wx:else class="tab-content-vac">
+      <image src="{{baseUrl}}img/img-icons/vac.png" mode="widthFix"></image>
+      <text>订单空空如也</text>
+    </view>
+	 </view>
+   <view class="tab-content {{tabi==2?'active':''}}">
+    <view wx:if="{{list.length>0}}">{{list.length}}[][]</view>
+    <view wx:else class="tab-content-vac">
+      <image src="{{baseUrl}}img/img-icons/vac.png" mode="widthFix"></image>
+      <text>订单空空如也</text>
+    </view>
+	 </view>
+	</view>

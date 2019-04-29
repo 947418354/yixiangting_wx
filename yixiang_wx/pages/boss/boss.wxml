@@ -1,0 +1,21 @@
+<!--pages/boss/boss.wxml-->
+<view class="jianjie" style="background-image:url('/pages/img/boss/bg.jpg');background-size:cover;padding:50rpx 0rpx 100rpx 0rpx;">
+  <view style="padding-left:250rpx;padding-right:100rpx;">
+    <p style="">{{jianjie}}</p>
+  </view>
+  <view id="arrow-jianjie" bindtap="arrowjianjie">{{buttonvalue}}       </view>
+</view>
+<!--横向选项卡  -->
+<view class="tab">
+ <view class="tab-nav">
+  <view class="tab-nav-item {{tabi==0?'active':''}}" catchtap='tabnav' data-tabi="0">店面</view>
+  <view class="tab-nav-item {{tabi==1?'active':''}}" catchtap='tabnav' data-tabi="1">最新动态</view>
+ </view>
+ <view class="tab-content {{tabi==0?'active':''}}">
+  <view><image src="http://127.0.0.1:7001/img/boss/boss1.jpg"></image></view>
+  <view><image src="http://127.0.0.1:7001/img/boss/boss1.jpg"></image></view>
+  <view><image src="http://127.0.0.1:7001/img/boss/boss1.jpg"></image></view>
+ </view>
+ <view class="tab-content {{tabi==1?'active':''}}">
+ </view>
+</view>

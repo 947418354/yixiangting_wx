@@ -1,0 +1,49 @@
+/* pages/boss/boss.wxss */
+.jianjie{
+  position: relative;
+  padding-bottom: 300rpx;
+  color:#fff;
+}
+#arrow-jianjie{
+  position: absolute;
+  bottom: 0rpx;
+  width:100%;
+  text-align: center;
+}
+
+/*横向选项卡  */
+.tab-nav{
+  display: flex;
+}
+.tab-nav-item{
+  padding:30rpx 50rpx;
+  color:#888;
+}
+.tab-nav-item.active{
+  font-size:40rpx;
+  color:black;
+  
+}
+.tab-nav-item.active::after{
+  content: "";
+  display:block;
+  width:80rpx;
+  margin: auto;
+  border-bottom: 3rpx solid orangered;
+}
+.tab-content:first-child{
+  display:flex;
+  flex-direction: column;
+  background-color: yellowgreen;
+}
+.tab-content view{
+  margin-top:50rpx;
+}
+.tab-content{
+  display:none;
+}
+.tab-content.active{
+  display:flex;
+  flex-direction: column;
+ 
+}

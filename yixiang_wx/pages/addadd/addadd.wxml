@@ -1,0 +1,25 @@
+<button class="large-button-bottom-f00">保存</button>
+
+<view class="form-address">
+ <view class="form-address-item">
+  <view class="form-address-item-view1">联系人</view>
+  <view class="form-address-item-view2">
+    <input type="text" bindblur='no_focus' bindfocus="focus" placeholder='请输入您的姓名'/>
+    <input />
+    <view>
+      <radio-group name="radio-group" bindchange="onRadioChange">
+        <label>
+          <radio value="战士" checked/>战士
+        </label>
+        <label>
+          <radio value="法师"  />法师
+        </label>
+        <label>
+          <radio value="牧师"  />牧师
+        </label>
+      </radio-group>
+    </view>
+  </view>
+ </view>
+</view>
+

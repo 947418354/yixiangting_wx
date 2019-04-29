@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/addadd/addadd",
+    "pages/address/address",
+    "pages/me/me",
+    "pages/teambook/teambook",
+    "pages/allbook/allbook",
+    "pages/boss/boss",
+    "pages/home/home"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "忆湘亭川湘菜",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "pages/img/home.png",
+        "selectedIconPath": "pages/img/home-active.png"
+      },
+      {
+        "pagePath": "pages/boss/boss",
+        "text": "店铺",
+        "iconPath": "pages/img/contact.png",
+        "selectedIconPath": "pages/img/contact-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "个人",
+        "iconPath": "pages/img/profile.png",
+        "selectedIconPath": "pages/img/profile-active.png"
+      }
+    ]
+  }
+}

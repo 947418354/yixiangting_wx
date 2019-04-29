@@ -1,0 +1,99 @@
+/* pages/home/home.wxss */
+.nav-list{
+  display:flex;
+  flex-wrap: wrap;
+  margin-top:20rpx;
+}
+.nav-list-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:33.3333333%;
+  height:200rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.nav-list-item:nth-child(3n){
+  border-right: 0;
+}
+.nav-list-item image{
+  width:100rpx;
+  height:100rpx;
+}
+
+/*商家卡片样式  */
+.card-shangjia{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-shangjia-title{
+  padding:20rpx;
+}
+.card-shangjia-item{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx ;
+}
+.card-shangjia-item text:nth-child(2){
+  width:60%;
+  text-align: right;
+}
+/*截取字符串添加省略号  */
+.ell{
+  overflow: hidden;     /*溢出隐藏 */
+  white-space: nowrap;  /*不换行*/
+  text-overflow: ellipsis;  /*补省略号*/
+}
+/*3:店铺信息*/
+.shop-info{
+  display: flex;         /*弹性布局*/
+  flex-direction: column;/*按列方式布局子元素*/
+  width:580rpx;
+  /* line-height: 1.5; */
+  color:#666;
+  font-size: 12px;
+}
+/*4:店铺名称*/
+.shop-dname{
+  width:380rpx;
+  color:#333;
+  font-size:16px;        /*店铺名称字大一些*/
+}
+
+/*店家推荐标题 带图 */
+.title{
+  text-align: center;
+  margin-top:30rpx; 
+  margin-bottom: 20rpx;
+}
+.title image{
+  width:32rpx;
+  height:32rpx;
+}
+/*店家推荐listcontainer-cai */
+.listcontainer-cai{
+  display:flex;
+  flex-wrap: wrap;
+}
+.listcontainer-cai-item{
+  width:48%;
+  margin-top:20rpx;
+  margin-left: 1%;
+  margin-right: 1%; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 5px #888;
+}
+.listcontainer-cai-item image{
+   width:100%; 
+} 
+.listcontainer-cai-item text:last-child{
+   color:red; 
+}

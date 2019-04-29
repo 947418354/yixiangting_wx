@@ -1,0 +1,19 @@
+<!--pages/me/me.wxml-->
+<view class="profile">
+  <view>
+    <image src="http://127.0.0.1:7001/img/boss/boss1.jpg" mode="widthFix"></image>
+  </view>
+  <view>微信昵称</view>
+</view>
+
+<!--竖向选项卡,只有nav  -->
+<view class="tab-nav">
+  <view class="tab-nav-item" catchtap='tabnav' data-tabi='0'>
+   <text>全部订单</text>
+   <text>></text>
+  </view>
+  <view class="tab-nav-item" catchtap='tabnav' data-tabi='1'>
+   <text>地址管理</text>
+   <text>></text>
+  </view>
+</view>

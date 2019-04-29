@@ -1,0 +1,18 @@
+<view class="tab-nav">
+	  <view class="tab-nav-item" catchtap='tabnav' data-tabi='0'>
+	   <text>团购订单</text>
+	   <text>></text>
+	  </view>
+	  <view class="tab-nav-item" catchtap='tabnav' data-tabi='1'>
+	   <text>线下订单</text>
+	   <text>></text>
+	  </view>
+    <view class="tab-nav-item" catchtap='tabnav' data-tabi='2'>
+	   <text>外卖订单</text>
+	   <text>></text>
+	  </view>
+    <view class="tab-nav-item" catchtap='tabnav' data-tabi='3'>
+	   <text>点餐订单</text>
+	   <text>></text>
+	  </view>
+	</view>

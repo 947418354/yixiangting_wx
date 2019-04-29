@@ -1,0 +1,3 @@
+<!--pages/address/address.wxml-->
+
+<button class="large-button-bottom-f00" catchtap='addadd'>新增收货地址</button>

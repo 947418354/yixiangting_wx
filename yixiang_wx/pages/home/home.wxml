@@ -1,0 +1,48 @@
+<!--pages/home/home.wxml-->
+<swiper autoplay='true' interval='2000' indicator-dots='true'>
+  <swiper-item wx:for="{{banner}}" wx:key="index">
+    <image src="{{item.img_src}}"></image>
+  </swiper-item>
+</swiper>
+  <!--九宫格  -->
+  <view class="nav-list">
+    <view class="nav-list-item" wx:for="{{navlist}}" wx:key="index">
+      <image src="{{item.img_src}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <!--商家信息 卡片  -->
+  <view class="card-shangjia">
+    <text class="card-shangjia-title">商家信息</text>
+    <view class="card-shangjia-item">
+      <text>营业时间</text><text>10:30-21:00</text>
+    </view>
+    <view class="card-shangjia-item" catchtap='callphone'>
+      <text>联系电话</text><text>15812341234</text>
+    </view>
+    <view class="card-shangjia-item">
+      <text>联系地址</text><text class="">某某区某某街道某某路某某号几栋几号</text>
+    </view>
+  </view>
+
+<!--店家推荐  -->
+<!--店家推荐标题  -->
+<view class="title">
+  <image src="http://127.0.0.1:7001/img/img-icons/star.jpg"></image>
+  <image src="http://127.0.0.1:7001/img/img-icons/star.jpg"></image>
+  <text>店家推荐</text>
+  <image src="http://127.0.0.1:7001/img/img-icons/star.jpg"></image>
+  <image src="http://127.0.0.1:7001/img/img-icons/star.jpg"></image>
+</view>
+<!--店家推荐菜品列表 末行左排列 -->
+<view class="listcontainer-cai">
+  <view class="listcontainer-cai-item" wx:for="{{hometuijian}}" wx:key="index">
+   <image src="{{item.img_src}}" mode="widthFix"></image>
+   <text>{{item.title}}</text>
+   <text>¥{{item.price}}</text>
+  </view>
+</view>
+
+
+
+
