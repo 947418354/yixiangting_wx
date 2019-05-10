@@ -1,5 +1,12 @@
+.text-right{
+  text-align: right;
+}
 .form-address-item{
   display:flex;
+  padding: 25rpx 15rpx;
+}
+.form-address-item+.form-address-item{
+  border-top:1px solid #eee;
 }
 .form-address-item-view1{
   width:30%;

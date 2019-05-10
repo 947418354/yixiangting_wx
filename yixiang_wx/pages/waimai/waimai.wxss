@@ -1,0 +1,10 @@
+/* pages/waimai/waimai.wxss */
+.page{
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+ .item2{
+  flex-grow:1;
+} 

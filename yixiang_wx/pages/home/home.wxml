@@ -5,12 +5,8 @@
   </swiper-item>
 </swiper>
   <!--九宫格  -->
-  <view class="nav-list">
-    <view class="nav-list-item" wx:for="{{navlist}}" wx:key="index">
-      <image src="{{item.img_src}}"></image>
-      <text>{{item.title}}</text>
-    </view>
-  </view>
+  <nav navlist="{{navlist}}"></nav>
+  
   <!--商家信息 卡片  -->
   <view class="card-shangjia">
     <text class="card-shangjia-title">商家信息</text>

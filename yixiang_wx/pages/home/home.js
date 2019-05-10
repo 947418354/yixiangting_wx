@@ -19,23 +19,28 @@ Page({
     navlist:[
       {
         title:"团购",
-        img_src:"http://127.0.0.1:7001/img/icons/grid-01.png"
+        img_src:"http://127.0.0.1:7001/img/icons/grid-01.png",
+        des:"/pages/tuangou/tuangou"
       },
       {
         title: "外卖",
-        img_src: "http://127.0.0.1:7001/img/icons/grid-01.png"
+        img_src: "http://127.0.0.1:7001/img/icons/grid-01.png",
+        des: "/pages/waimai/waimai"
       },
       {
         title: "一键wifi",
-        img_src: "http://127.0.0.1:7001/img/icons/grid-01.png"
+        img_src: "http://127.0.0.1:7001/img/icons/grid-01.png",
+        des:"/pages/wifi/wifi"
       },
       {
         title: "活动",
-        img_src: "http://127.0.0.1:7001/img/icons/grid-01.png"
+        img_src: "http://127.0.0.1:7001/img/icons/grid-01.png",
+        des:"/pages/huodong/huodong"
       },
       {
         title: "买单",
-        img_src: "http://127.0.0.1:7001/img/icons/grid-01.png"
+        img_src: "http://127.0.0.1:7001/img/icons/grid-01.png",
+        des:"/pages/maidan/maidan"
       },
     ],
     hometuijian:[
@@ -72,7 +77,11 @@ Page({
       phoneNumber: '15812341234',
     })
   },
-
+  nav(e){
+    wx.navigateTo({
+      url: this.data.navlist[e.currentTarget.dataset.id].des,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

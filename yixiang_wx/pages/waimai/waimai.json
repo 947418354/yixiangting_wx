@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "外卖",
+  "usingComponents": {
+    "search": "/component/search/search",
+    "food-list": "/component/food-list/food-list",
+    "food-lista": "/component/food-list1/food-list1"
+  }
+}

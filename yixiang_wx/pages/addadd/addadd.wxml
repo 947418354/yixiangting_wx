@@ -1,25 +1,49 @@
-<button class="large-button-bottom-f00">保存</button>
 
-<view class="form-address">
+<!--表单提交  -->
+<form class="form-address" bindsubmit="save">
  <view class="form-address-item">
   <view class="form-address-item-view1">联系人</view>
   <view class="form-address-item-view2">
-    <input type="text" bindblur='no_focus' bindfocus="focus" placeholder='请输入您的姓名'/>
+    <input name="addressee" type="text" bindblur='no_focus' bindfocus="focus" placeholder='请输入您的姓名'/>
     <input />
     <view>
-      <radio-group name="radio-group" bindchange="onRadioChange">
+      <radio-group name="sex" bindchange="onRadioChange">
         <label>
-          <radio value="战士" checked/>战士
+          <radio value="1" checked/>男士
         </label>
         <label>
-          <radio value="法师"  />法师
-        </label>
-        <label>
-          <radio value="牧师"  />牧师
+          <radio value="0"  />女士
         </label>
       </radio-group>
     </view>
   </view>
  </view>
-</view>
+ <view class="form-address-item">
+  <view class="form-address-item-view1">电话</view>
+  <view class="form-address-item-view2">
+    <input type="text" placeholder='请输入您的手机号码' name="phone" class="text-right"></input>
+  </view>
+ </view>
+ <view class="form-address-item" catchtap='locate'>
+  <view class="form-address-item-view1">地址</view>
+  <view class="form-address-item-view2 text-right">
+  <input type="text" placeholder='请选择收货地址>' name="address" class="text-right"></input>
+  </view>
+ </view>
+ <view class="form-address-item">
+  <view class="form-address-item-view1">具体位置</view>
+  <view class="form-address-item-view2">
+    <textarea placeholder='例:综合楼703' name="subaddress"></textarea>
+  </view>
+ </view>
+ <view class="form-address-item">
+  <view class="">
+  <!--复选框,提取e.detail.value.isdefault 返回值为数组  -->
+    <checkbox-group name="isdefault">
+      <checkbox value="1">设为默认地址</checkbox>
+    </checkbox-group> 
+  </view>
+ </view>
+ <button class="large-button-bottom-f00" formType="submit">保存</button>
+</form>
 
