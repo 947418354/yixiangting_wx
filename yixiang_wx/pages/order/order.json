@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "order-list": "/component/order-list/order-list",
+    "addlist-item": "/component/addlist-item/index",
+    "i-tabs": "../../dist/tabs/index",
+    "i-tab": "../../dist/tab/index"
+  },
+  "navigationBarTitleText": "订单模块"
+}

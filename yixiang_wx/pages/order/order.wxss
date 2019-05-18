@@ -1,0 +1,10 @@
+.container1{
+  width:95%;
+  margin:auto;
+}
+.lg-card2>view{
+  padding:20rpx;
+}
+.lg-card2>view:not(:last-child){
+  border-bottom: 1px solid #ddd;
+}

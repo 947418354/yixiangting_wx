@@ -1,0 +1,44 @@
+<view class="container1">
+  <i-tabs current="{{ current }}" bindchange="handleChange">
+    <i-tab key="tab1" title="商品配送"><text>1</text></i-tab>
+    <i-tab key="tab2" title="到店自取"><view>2</view></i-tab>
+</i-tabs>
+  <view wx:if="{{tab1}}" class='tab1'>
+  <view catchtap='addadd'>
+    <button wx:if="{{defaultAdd<0}}" >添加配送地址</button>
+    <view wx:else>
+      <view>
+        <addlist-item add="{{defaultAddC.address}}" addressee="{{defaultAddC.addressee}}" phone="{{defaultAddC.phone}}" onlyread></addlist-item> 
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{tab2}}" class='tab2'>
+  本店地址:某某街道某某号
+</view>
+
+  <!--购物车列表  -->
+  <view class="lg-card2">
+    <view class="">
+    <view style="display:flex;">
+      <view style="width:60%"><text>忆湘亭川湘菜</text></view>
+      <view style="width:40%"><button class="btn1" style="line-height:1.2;">联系店家</button></view>
+    </view>
+  </view>
+  <view>
+    <order-list list="{{list}}"></order-list> 
+  </view>
+  <view style="display:flex;" >
+      <view style="width:60%"><text>优惠信息</text></view>
+      <view style="width:40%"><text>¥0.00</text></view>
+    </view>
+  <view style="display:flex;" >
+      <view style="width:60%"><text></text></view>
+      <view style="width:40%"><text>共计:¥0.00</text></view>
+  </view>
+  </view>
+
+  <button disabled='{{!isPay}}' catchtap='pay'>立即付款</button>
+</view>
+ 
+
